@@ -1,0 +1,54 @@
+@use 'variaveis';
+@use 'hero';
+@use 'episodes';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: variaveis.$corDeFundo;
+}
+
+@mixin text($fontSize: 16px) {
+  font-size: $fontSize;
+  line-height: $fontSize + 8px;
+}
+
+.text--big-main {
+  @include text(22px);
+  color: variaveis.$corPrincipal;
+}
+
+.text--big-sec {
+  @include text(18px);
+  color: variaveis.$corSecundaria;
+}
+
+.text {
+  @include text;
+  color: variaveis.$corPrincipal;
+}
+
+.text--small {
+  @include text(14px);
+  color: variaveis.$corPrincipal;
+}
+
+.text--button {
+  @include text(18px);
+  color: variaveis.$corPrincipal;
+}
+
+.text--button-big {
+  @include text(18px);
+  color: variaveis.$corBotao;
+}
+
+.text--button-small {
+  @include text(14px);
+  color: variaveis.$corBotao;
+}

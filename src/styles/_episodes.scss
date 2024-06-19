@@ -1,0 +1,37 @@
+@use 'variaveis';
+
+.container {
+  font-family: "Open Sans", sans-serif;
+  margin: 0 72px;
+
+}
+
+.episodes {
+  display: flex;
+  gap: 20px;
+
+  &__img {
+    height: 160px;
+  }
+
+  &__title {
+    color: variaveis.$corPrincipal;
+    font-size: 20px;
+  }
+}
+
+h3 {
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+h3, p {
+  color: variaveis.$corHeader;
+}
+
+h4 {
+  color: variaveis.$corPrincipal;
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 28px;
+}
